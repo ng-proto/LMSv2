@@ -12,6 +12,7 @@ module.exports = function (config) {
       require('angular-cli/plugins/karma')
     ],
     files: [
+      { pattern: "node_modules/chart.js/dist/Chart.js", included: true, watched: false },
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
